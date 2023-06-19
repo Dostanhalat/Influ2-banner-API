@@ -10,7 +10,7 @@ def index():
     if request.method == 'POST':
         link = request.form.get('link')
         return redirect(url_for('result', link = link))
-    return render_template('index.html')
+    return render_template('main.html')
 
 
 @app.route('/result')
