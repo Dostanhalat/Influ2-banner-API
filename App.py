@@ -6,7 +6,7 @@ from PIL import Image
 app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
-def index():
+def main():
     if request.method == 'POST':
         link = request.form.get('link')
         return redirect(url_for('result', link = link))
