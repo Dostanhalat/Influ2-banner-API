@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify, url_for, redirect
 from selenium import webdriver
 from PIL import Image
+import configparser
+import requests
 import os
 
 app = Flask(__name__, template_folder = os.getcwd())
@@ -58,4 +60,4 @@ def result():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host = "0.0.0.0", port = 5000)
