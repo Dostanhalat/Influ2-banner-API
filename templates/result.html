@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <style>
+      #titler{
+        font-size: 20px;
+      }
+      .colorBlocks{
+        height: 10px;
+        width: 10px;
+        border: 1px solid ;
+      }
+      #cointainter{
+        width: all;
+        height: 500px;
+        background-color: rgb(71, 63, 21);
+      }
+      #buisnessman{
+        margin-top: 83px;
+        margin-left: 200px;
+        background-color: antiquewhite;
+        height: 100px;
+        width: 100px;
+        font-size: 50px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDq8wH8friOyq0uodFKZHt2IKQmwrRUDrVvw&usqp=CAU);
+        background-size: cover;
+      }
+      #logo{
+        height: 300px;
+        width: 300px;
+        font-size: 50px;
+        font-style: bold;
+
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <div id = "container">
+      
+      <div id="logo">
+          [Insert text here]
+          <div id = "buisnessman">
+            
+          </div>
+      </div>
+      <p id = "titler"> Most frequent colors</p>
+      <div id = "colorList">
+        <p id = "color1" class = "colors">
+          {{c1}}
+          <div id = "color1Block" class="colorBlocks"></div>
+        </p>
+        <p id = "color2" class = "colors">
+          {{c2}}
+          <div id = "color2Block" class="colorBlocks"></div>
+        </p>
+        <p id = "color3" class = "colors">
+          {{c3}}
+          <div id = "color3Block" class="colorBlocks"></div>
+        </p>
+        <p id = "color4" class = "colors">
+          {{c4}}
+          <div id = "color4Block" class="colorBlocks"></div>
+        </p>
+        <p id = "color5" class = "colors">
+          {{c5}}
+          <div id = "color5Block" class="colorBlocks"></div>
+        </p>
+      </div>
+    </center>
+      <script>
+        document.getElementById("logo").style.backgroundColor = "rgb(" + document.getElementById("color1").innerHTML + ")";
+        document.getElementById("logo").style.color = "rgb(" + document.getElementById("color2").innerHTML + ")";
+        document.getElementById("color1Block").style.backgroundColor = "rgb(" + document.getElementById("color1").innerHTML + ")";
+        document.getElementById("color2Block").style.backgroundColor = "rgb(" + document.getElementById("color2").innerHTML + ")";
+        document.getElementById("color3Block").style.backgroundColor = "rgb(" + document.getElementById("color3").innerHTML + ")";
+        document.getElementById("color4Block").style.backgroundColor = "rgb(" + document.getElementById("color4").innerHTML + ")";
+        document.getElementById("color5Block").style.backgroundColor = "rgb(" + document.getElementById("color5").innerHTML + ")";
+      </script>
+      
+
+    </div>
+
+   
+  </body>
+</html>
