@@ -1,3 +1,4 @@
+pip install "git+https://github.com/mikeboers/Flask-ACL"
 from flask import Flask, render_template, request, jsonify, url_for, redirect
 from selenium import webdriver
 from PIL import Image
