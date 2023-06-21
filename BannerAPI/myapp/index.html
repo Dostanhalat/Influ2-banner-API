@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+      #submit{
+
+        font-size: 20px;
+        font-style: bold;
+        background-color: white;
+        color:rgb(35, 150, 94) ;
+      }
+      #laod{
+        background-color: black;
+        width: 30px;
+        height: 30px;
+        border-top: red;
+        border-bottom: purple;
+        border-left: yellow;
+        border-right: blue;
+        border:solid 5px;
+        border-radius: 100px;
+        animation: rotation 2s infinite linear;
+      }
+      @keyframes rotation{
+       from {
+         transform: rotate(0deg);
+        }
+       to {
+         transform: rotate(359deg);
+        }
+        }
+      .sub:hover{
+        color: white;
+        background-color: black;
+      }
+      .sub{
+        border: 0px;
+        border-radius: 5px;
+        margin-top:20px;
+        width:200px ;
+        height: 40px;
+      }
+      #body{
+        background-color: rgba(240, 248, 255, 0.806);
+      }
+      #container{
+        width: 400px;
+        padding-bottom: 30px;
+        margin-top: 150px;
+        border-radius: 25px;
+        background-color:rgb(15, 130, 74);
+      }
+      #title{
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="container">
+        <h3 id = "title">Input a url</h3>
+        <form action="/" method="post">
+          <input type="link" id="link" name="link" class="sub">
+          <br>
+          <input type="submit" value="Submit" class="sub" id = "submit"> <div id = "load"></div>
+        </form>
+      </div>
+    </center>
+    
+
+    
+  </body>
+</html>
