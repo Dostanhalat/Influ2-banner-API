@@ -41,3 +41,4 @@ blinker==1.6.2
 bs4==0.0.1
 Flask==2.2.4
 Selenium==3.0.0
+waitress==2.1.2
