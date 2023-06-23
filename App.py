@@ -24,7 +24,7 @@ def result():
 
         wd.get_screenshot_as_file(r"screenshots/screenshot.png")
         #Loading in the screenshot
-        im = Image.open(r"screenshots/screenshot.png").convert("RGB", palette = Image.ADAPTIVE, colors = 16)
+        im = Image.open(r"screensots/screenshot.png").convert("RGB", palette = Image.ADAPTIVE, colors = 16)
         pix = im.load()
 
         x = im.size[0]
@@ -52,8 +52,9 @@ def result():
                 counter += 1
         newValues.sort(reverse=True)
         return render_template('result.html', c1 = newValues[0][1], c2 = newValues[1][1], c3 = newValues[2][1], c4 = newValues[3][1],c5 = newValues[4][1])
-    except:
-        return render_template('error.html')
+    except Exception as error:
+        print(error)
+        return render_template('error.html',error=error)
 
 
 if __name__ == '__main__':
